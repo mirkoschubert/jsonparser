@@ -1,6 +1,6 @@
-* How to use the JSONParser Class
+# How to use the JSONParser Class
 
-** Open or Create a JSON File
+## Open or Create a JSON File
 
 There is an optional language variable for creating multi-language JSON files.
 
@@ -8,7 +8,7 @@ There is an optional language variable for creating multi-language JSON files.
 $json = new JSONParser('filename.json', 'en-en');
 ```
 
-** Create a new Entry
+## Create a new Entry
 
 The 'name' variable must be set as an identificator
 
@@ -19,7 +19,7 @@ $brian->city = 'memphis';
 $json->appendEntry($brian);
 ```
 
-** Edit an existing Entry
+## Edit an existing Entry
 
 ```php
 $brian = selectEntryByName('brian');
@@ -28,13 +28,13 @@ $brian->surname = 'walker';
 $json->updateEntry($brian);
 ```
 
-** Delete an Entry
+## Delete an Entry
 
 ```php
 $json->deleteEntry('brian');
 ```
 
-** Access JSON stream directly
+## Access JSON stream directly
 
 For API porposes there are two variables:
 
